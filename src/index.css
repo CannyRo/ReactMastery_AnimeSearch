@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Alita";
+    src: url('./assets/BattleAngel-VRLl.ttf') format("truetype");
+}
+
+.text-alita {
+    font-family: 'Alita';
+}
+
+.bg-img {
+    background: url('./assets/bg_vertical.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.bg-glass {
+    background: rgba( 134, 25, 143, 0.4 );
+    box-shadow: 0 0.5rem 2rem 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.2rem );
+    -webkit-backdrop-filter: blur( 0.2rem );
+    border-radius: 0.7rem;
+    border: 0.1rem solid rgba( 134, 25, 143, 0.18 );
+}
+
+.bg-glass-button {
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 0.5rem 2rem 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.2rem );
+    -webkit-backdrop-filter: blur( 0.2rem );
+    border-radius: 0.7rem;
+    border: 0.1rem solid rgba( 255, 255, 255, 0.18 );
+}
+
+.bg-glass-button:hover {
+    background: rgba( 134, 25, 143, 0.4 );
+    box-shadow: 0 0.5rem 2rem 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.2rem );
+    -webkit-backdrop-filter: blur( 0.2rem );
+    border-radius: 0.7rem;
+    border: 0.1rem solid rgba( 134, 25, 143, 0.18 );
+}
+
+.img-shape {
+    width: 6.25rem;
+    height: 6.25rem;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 0.7rem;
+}
+
+.img-shape-xl {
+    width: 12.5rem;
+    height: 12.5rem;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 0.7rem;
+}
+
+.unstyled {
+    border: none;
+    text-decoration: none;
+    background-color: none;
+}
