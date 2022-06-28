@@ -5,8 +5,8 @@
 # Welcome!!!
 
 Here is a simple app to search any character of anime.
-We use the Kitsu API [kitsu api documentation](https://kitsu.docs.apiary.io/#)  
-with an app developped with Create React App [create react app](https://fr.reactjs.org/docs/create-a-new-react-app.html#create-react-app)  
+We use the [Kitsu API](https://kitsu.docs.apiary.io/#)  
+with an app developped with [Create React App](https://fr.reactjs.org/docs/create-a-new-react-app.html#create-react-app)  
 Enjoy it!!! :wink: :wink: :wink:
 
 # Getting Started with Create React App
