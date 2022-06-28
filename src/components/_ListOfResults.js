@@ -15,8 +15,6 @@ export default function ListOfResult({characterName, characterId, setCharacterId
         setCharacters()
         fetchResearch(characterName)
         .then(response => {
-            console.log("on récupère les données pour les utiliser et mettre à jour characters")
-            console.log("on affiche la réponse : ",response)
             setCharacters(response)
         })
         .catch(error => setError(error))
@@ -27,15 +25,10 @@ export default function ListOfResult({characterName, characterId, setCharacterId
         throw error
     }
     if(!characterName) {
-        return "Entrer le nom d'un personnage"
+        return console.log("Write a character")
     }
     if(!characters) {
-        return "Chargement des informations..."
-    }
-    if(characters){
-        console.log("Affichage de characters dans la console")
-        console.log(typeof characters)
-        console.dir(characters)
+        return console.log("Loading of results")
     }
     return (
         <ViewList characters={characters} characterId={characterId} setCharacterId={setCharacterId}/>

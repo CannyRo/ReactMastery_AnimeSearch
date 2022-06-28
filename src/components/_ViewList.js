@@ -4,8 +4,7 @@ import { fetchDetailsCharacter } from "./_FetchDetailsCharacter";
 import ModalDetailCharacter from "./_ModalDetailCharacter"
 //*** function ***//
 export default function ViewList({characters, characterId, setCharacterId}) {
-    console.log("Console Dir : ")
-    console.dir(characters)
+    
     const [showModal, setShowModal] = React.useState(false);
     
     const iWillShowModal = (number) => {
@@ -22,8 +21,6 @@ export default function ViewList({characters, characterId, setCharacterId}) {
         setId()
         fetchDetailsCharacter(characterId)
         .then(response => {
-            console.log("on récupère les données du personnage souhaité")
-            console.log("on affiche ses informations", response)
             setCharacterDetail(response)
         })
         .catch(error => setError())
@@ -31,10 +28,6 @@ export default function ViewList({characters, characterId, setCharacterId}) {
 
     if(error) {
         throw error
-    }
-    if(id){
-        console.log("Affichage des infos de l'ID :", id)
-        console.dir(id)
     }
 
     return (

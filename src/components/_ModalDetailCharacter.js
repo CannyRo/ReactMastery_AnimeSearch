@@ -3,12 +3,10 @@ import React from "react"
 
 // *** Function ***//
 export default function ModalDetailCharacter({showModal, setShowModal, characterDetail, setCharacterDetail}) {
-    console.log("characterDetail : ", characterDetail)
 
     const closeModal = () => {
         setCharacterDetail(null)
         setShowModal(false)
-        console.log("Après effacement : ", characterDetail)
     }
     return(
         <>
