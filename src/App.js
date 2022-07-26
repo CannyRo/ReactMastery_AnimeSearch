@@ -10,7 +10,7 @@ function App() {
   const [characterId, setCharacterId] = React.useState('')
   const handleSearch = name => {
     setCharacterName(name)
-    console.log("Nous utilisons la fonction handleSearch pour mettre à jour le nom recherhcé")
+    console.log("Nous utilisons la fonction handleSearch pour mettre à jour le nom recherhcé : ", name)
   }
     return (
       <div className="flex flex-col min-h-screen bg-img">

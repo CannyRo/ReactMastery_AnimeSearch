@@ -23,7 +23,7 @@ export default function ViewList({characters, characterId, setCharacterId}) {
         .then(response => {
             setCharacterDetail(response)
         })
-        .catch(error => setError())
+        .catch(error => setError(error))
     }, [characterId])
 
     if(error) {

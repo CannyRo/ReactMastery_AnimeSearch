@@ -31,7 +31,6 @@
     backdrop-filter: blur( 0.2rem );
     -webkit-backdrop-filter: blur( 0.2rem );
     border-radius: 0.7rem;
-    border: 0.1rem solid rgba( 255, 255, 255, 0.18 );
 }
 
 .bg-glass-button:hover {
@@ -40,7 +39,6 @@
     backdrop-filter: blur( 0.2rem );
     -webkit-backdrop-filter: blur( 0.2rem );
     border-radius: 0.7rem;
-    border: 0.1rem solid rgba( 134, 25, 143, 0.18 );
 }
 
 .img-shape {

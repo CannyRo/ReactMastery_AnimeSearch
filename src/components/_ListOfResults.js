@@ -8,11 +8,12 @@ export default function ListOfResult({characterName, characterId, setCharacterId
     const [error, setError] = React.useState(null)
 
     React.useEffect(() => {
-        console.log('React.useEffect from characterName', characterName)
+        console.log('React.useEffect from characterName : ', characterName)
         if (!characterName) {
             return
         }
         setCharacters()
+        console.log('On lance le fetch depuis le useEffect de ListOfResult')
         fetchResearch(characterName)
         .then(response => {
             setCharacters(response)
